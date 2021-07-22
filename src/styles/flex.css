@@ -1,0 +1,25 @@
+display:flex+justify-content: center flex center overflow: hidden; // 溢出隐藏
+text-overflow: ellipsis; // 溢出用省略号显示
+white-space: nowrap;
+overflow: hidden; // 溢出隐藏
+text-overflow: ellipsis; // 溢出用省略号显示
+display:-webkit-box; // 作为弹性伸缩盒子模型显示。
+-webkit-box-orient:vertical; // 设置伸缩盒子的子元素排列方式：从上到下垂直排列
+-webkit-line-clamp:3; // 显示的行数
+p {
+    position: relative;
+    line-height: 1.4em;
+    /*设置容器高度为3倍行高就是显示3行*/
+    height: 4.2em;
+    overflow: hidden;
+}
+
+p::after {
+    content: '...';
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px 1px 45px;
+    background: #fff;
+}

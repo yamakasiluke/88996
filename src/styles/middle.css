@@ -1,0 +1,22 @@
+/*利用text-align:center和vertical-align:middle属性*/
+
+
+.container1 {
+  display: flex;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+.containerdiv1 {
+  width: 100px;
+  height: 100px;
+  background-color: pink; /*方便看效果*/
+}
+
+.a{
+  width: 0;
+  height: 0;
+  border-width: 100px;
+  border-style: solid;
+  border-color: transparent #0099CC transparent transparent;
+  transform: rotate(90deg); /*顺时针旋转90°*/
+}
